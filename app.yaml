@@ -10,6 +10,10 @@ handlers:
   upload: favicon\.ico
 - url: /shared
   static_dir: static/shared
+- url: /poly
+  static_dir: poly
+- url : /bower_components
+  static_dir: bower_components
 
 - url: .*
   script: main.app

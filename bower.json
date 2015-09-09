@@ -1,0 +1,24 @@
+{
+  "name": "devfest2015",
+  "version": "0.0.1",
+  "homepage": "https://github.com/freewayz/devfest2015",
+  "description": "NorthEast Devfest site",
+  "keywords": [
+    "gdg",
+    "javascript"
+  ],
+  "authors": [
+    "Edache Peter"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0"
+  }
+}
