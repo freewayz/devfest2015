@@ -17,7 +17,9 @@ function animateToSection(link, current, previous) {
     header.appendChild(effectNode);
 
     var newColor = 'hsl(' + Math.round(Math.random() * 255) + ', 46%, 42%)';
-    var imageBackground = "devfest1"+1;
+    var imageValue = Math.floor(Math.random() * 5) + 1  ;
+    var imageName = '/images/devfest'+ imageValue +'.jpg';
+    var imageBackground = "url("+imageName+")";
     //effectNode.style.background = newColor;
     effectNode.style.backgroundImage = imageBackground;
 
@@ -33,7 +35,8 @@ function animateToSection(link, current, previous) {
     var groupEffect = new GroupEffect(allEffects);
     var anim = document.timeline.play(groupEffect);
     anim.addEventListener('finish', function () {
-        header.style.backgroundColor = newColor;
+        //header.style.backgroundColor = newColor;
+        header.style.backgroundImage = imageBackground ;
         header.removeChild(effectNode);
     });
 }
