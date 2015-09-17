@@ -61,7 +61,7 @@ header .links a.active {
 
 section {
   will-change: transform;
-  margin: -2em 2em 2em;
+  margin: -9em 2em 2em;
   z-index: 2;
   width: calc(100% - 4em);
   box-sizing: border-box;
@@ -77,6 +77,7 @@ section article {
   background: white;
   color: #666;
   max-width: 800px;
+
   margin: 0 auto;
   padding: 0.5em 2em;
   border-radius: 3px;

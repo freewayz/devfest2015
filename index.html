@@ -8,7 +8,10 @@
     <link href="/shared/site.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.rawgit.com/web-animations/web-animations-js/2.0.0/web-animations-next.min.js"></script>
     <script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-    <link  rel="import" href="/poly/proto-elem.html">
+    <link rel="import" href="/poly/proto-elem.html">
+    <link rel="import" href="/poly/loc-elem.html">
+    <link rel="import" href="/bower_components/google-map/google-map.html">
+<link rel="import" href="/bower_components/google-map/google-map-directions.html">
     <script async src="/shared/codelab.js"></script>
     <script async src="/shared/site.js"></script>
 </head>
@@ -18,10 +21,10 @@
     <div class="links">
         <a href="#about">About</a>
         <a href="#projects">Schedule</a>
-        <a href="#speaker">Speakers</a>
+        <a href="#speakers">Speakers</a>
         <a href="#location">Location</a>
         <a href="#track">Event Track</a>
-        <a href="#seat">Book A Seat</a>
+        <a href="#team">Book A Seat</a>
 
 
     </div>
@@ -40,6 +43,9 @@
         <h1>About</h1>
 
         <p>
+
+            With this event, we not only plan to bring together developers from different locality and institutions to
+            brainstorm and share ideas, with the event, we intend to improve the quality of developers we have in o
             Google's services have become synonymous with simple things online. The number of technological innovations
             and IT industries in which Google is creating new products is enormous. It's hard to get to know all of
             them, but realistic. This is why people have started to gather in small local groups and share their
@@ -159,39 +165,17 @@
     <article>
         <h1>At Google</h1>
 
-        <div>
-            <proto-element></proto-element>
-        </div>
+
     </article>
 </section>
 
 <section hidden name="team">
     <article>
-        <h1>At Google</h1>
+        <div id="map">
 
-        <p>
-            We're currently using renewable energy to power 35% of our operations, and we continue to look for ways to
-            increase our use of clean energy. This includes trying new, innovative technology at our offices and buying
-            green power near our data centers.
-        </p>
-
-        <p>
-            When testing new renewable energy technologies on our campuses, we evaluate them against a few criteria:
-            They must make good business sense, have potential for long-term significant impact and transform the
-            industry. For example, in 2007, we installed the largest corporate solar panel installation of its
-            kind &mdash; 1.7 MW &mdash; at our Mountain View campus. We've grown the size of the system to 1.9 MW, and
-            it generates enough electricity to power 30% of the peak load of the buildings on which it sits.
-        </p>
-
-        <p>
-            Currently, very little of the world's power is from renewables like wind and solar. We're working on
-            changing that by buying electricity directly from wind farms near our data centers. We're also working with
-            our utility partners to find solutions that will make more renewable energy available for us and for others.
-            All of these initiatives help us get clean energy at competitive prices and the wind farm owners get the
-            money they need to build these projects and/or finance additional clean energy facilities. Together we make
-            the grid a little bit greener.
-        </p>
+     </div>
     </article>
+
 </section>
 
 <section hidden name="speakers">
@@ -222,5 +206,7 @@
         </p>
     </article>
 </section>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiTOmmzp9kPxxVaNWTlVvcpIpi3rcqwY0&callback=initMap"
+        async defer></script>
 </body>
 </html>

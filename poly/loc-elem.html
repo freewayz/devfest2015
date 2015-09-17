@@ -1,0 +1,42 @@
+<link rel="import" href="/bower_components/google-map/google-map.html">
+<link rel="import" href="/bower_components/google-map/google-map-directions.html">
+
+<polymer-element name="loc-elem">
+
+    <template>
+        <style>
+            #google_map {
+                width: 400px;
+                height: 400px;
+                display: block;
+                left: 210px;
+                top: 10px;
+                position: absolute;
+            }
+
+            #google_map_directions {
+                left: 400px;
+                top: 200px;
+                position: absolute;
+            }
+        </style>
+        <google-map showcentermarker id="google_map" latitude="37.779" longitude="-122.3892" zoom="13">
+            <google-map-marker
+                    latitude="37.779"
+                    longitude="-122.3892"
+                    title="Go Giants!"
+                    draggable="true">
+            </google-map-marker>
+        </google-map>
+        <google-map-directions travelmode="TRANSIT" id="google_map_directions"></google-map-directions>
+    </template>
+
+    <script>
+
+        Polymer({
+             is: "loc-elem"
+        });
+
+    </script>
+
+</polymer-element>
