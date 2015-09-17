@@ -12,3 +12,173 @@ div.circleEffect {
 #map {
     height: 400px;
 }
+
+#cards {
+@apply(- -layout-vertical);
+@apply(- -center-justified);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+paper-card {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.avatar {
+    display: inline-block;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    background: var(--paper-pink-500);
+    color: white;
+    line-height: 64px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.fancy .title {
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    color: var(--paper-indigo-500);
+}
+
+.fancy img {
+    width: 100%;
+}
+
+.fancy .big {
+    font-size: 22px;
+    padding: 8px 0 16px;
+    color: var(--google-grey-500);
+}
+
+.fancy .medium {
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+
+.pink {
+    --paper-card-header-color: var(--paper-pink-500);
+}
+
+.grid-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+/*-- our cleafix hack -- */
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*='col-'] {
+    float: left;
+    min-height: 1px;
+    width: 16.66%;
+    /*-- our gutter -- */
+    padding: 12px;
+    /*background-color: #FFDCDC;*/
+}
+
+.col-1 {
+    width: 16.66%;
+}
+
+.col-2 {
+    width: 33.33%;
+}
+
+.col-3 {
+    width: 47%;
+}
+
+.col-4 {
+    width: 66.66%;
+}
+
+.col-5 {
+    width: 83.33%;
+}
+
+.col-6 {
+    width: 100%;
+}
+
+.outline, .outline * {
+    outline: 1px solid #F6A1A1;
+}
+
+/*-- some extra column content styling --*/
+[class*='col-'] > p {
+    /*background-color: #FFC2C2;*/
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+@media all and (max-width: 650px) {
+    .col-1 {
+        width: 50%;
+    }
+
+    .col-2 {
+        width: 100%;
+    }
+
+    .col-3 {
+        width: 100%;
+    }
+
+    .col-4 {
+        width: 100%;
+    }
+
+    .col-5 {
+        width: 100%;
+    }
+
+    .col-6 {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .col-1 {
+        width: 33.33%;
+    }
+
+    .col-2 {
+        width: 50%;
+    }
+
+    .col-3 {
+        width: 83.33%;
+    }
+
+    .col-4 {
+        width: 100%;
+    }
+
+    .col-5 {
+        width: 100%;
+    }
+
+    .col-6 {
+        width: 100%;
+    }
+
+    .row .col-2:last-of-type {
+        width: 100%;
+    }
+
+    .row .col-5 ~ .col-1 {
+        width: 100%;
+    }
+}

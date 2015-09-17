@@ -8,10 +8,12 @@
     <link href="/shared/site.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.rawgit.com/web-animations/web-animations-js/2.0.0/web-animations-next.min.js"></script>
     <script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-    <link rel="import" href="/poly/proto-elem.html">
-    <link rel="import" href="/poly/loc-elem.html">
-    <link rel="import" href="/bower_components/google-map/google-map.html">
-<link rel="import" href="/bower_components/google-map/google-map-directions.html">
+    <link rel="import" href="/bower_components/paper-card/paper-card.html">
+    <link rel="import" href="/bower_components/paper-button/paper-button.html">
+    <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="/bower_components/iron-icons/iron-icons.html">
+    <link rel="import" href="/bower_components/iron-flex-layout/iron-flex-layout.html">
+    <link rel="import" href="/bower_components/paper-styles/color.html">
     <script async src="/shared/codelab.js"></script>
     <script async src="/shared/site.js"></script>
 </head>
@@ -23,7 +25,7 @@
         <a href="#projects">Schedule</a>
         <a href="#speakers">Speakers</a>
         <a href="#location">Location</a>
-        <a href="#track">Event Track</a>
+        <a href="#at-google">Event Track</a>
         <a href="#team">Book A Seat</a>
 
 
@@ -133,30 +135,7 @@
 
 <section hidden name="at-google">
     <article>
-        <h1>At Google</h1>
 
-        <p>
-            We're currently using renewable energy to power 35% of our operations, and we continue to look for ways to
-            increase our use of clean energy. This includes trying new, innovative technology at our offices and buying
-            green power near our data centers.
-        </p>
-
-        <p>
-            When testing new renewable energy technologies on our campuses, we evaluate them against a few criteria:
-            They must make good business sense, have potential for long-term significant impact and transform the
-            industry. For example, in 2007, we installed the largest corporate solar panel installation of its
-            kind &mdash; 1.7 MW &mdash; at our Mountain View campus. We've grown the size of the system to 1.9 MW, and
-            it generates enough electricity to power 30% of the peak load of the buildings on which it sits.
-        </p>
-
-        <p>
-            Currently, very little of the world's power is from renewables like wind and solar. We're working on
-            changing that by buying electricity directly from wind farms near our data centers. We're also working with
-            our utility partners to find solutions that will make more renewable energy available for us and for others.
-            All of these initiatives help us get clean energy at competitive prices and the wind farm owners get the
-            money they need to build these projects and/or finance additional clean energy facilities. Together we make
-            the grid a little bit greener.
-        </p>
     </article>
 </section>
 
@@ -165,45 +144,89 @@
     <article>
         <h1>At Google</h1>
 
+        <div id="map">
+
+        </div>
 
     </article>
 </section>
 
 <section hidden name="team">
     <article>
-        <div id="map">
 
-     </div>
     </article>
 
 </section>
 
 <section hidden name="speakers">
     <article>
-        <h1>At Google</h1>
+        <h1>Speakers</h1>
 
-        <p>
-            We're currently using renewable energy to power 35% of our operations, and we continue to look for ways to
-            increase our use of clean energy. This includes trying new, innovative technology at our offices and buying
-            green power near our data centers.
-        </p>
+        <div class="grid-container">
+            <div class="row">
+                <div class="col-3">
+                    <p>
+                        <paper-card heading="Titles AND images!" class="pink"
+                                    image="http://placehold.it/350x150">
+                            <div class="card-content">
+                                Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae.
+                                Laudem nostrud ei
+                                vim. Sapientem consequuntur usu ad, vel etiam philosophia ex, ad quidam option quo. Sed
+                                sale integre
+                                pericula ei, rebum adipiscing ius ea.
+                            </div>
+                            <div class="card-actions">
+                                <paper-button>No</paper-button>
+                                <paper-button>Yes</paper-button>
+                            </div>
+                        </paper-card>
+                    </p>
+                </div>
+                <div class="col-3">
+                    <p>
+                        <paper-card heading="Titles AND images!" class="pink"
+                                    image="http://placehold.it/350x150">
+                            <div class="card-content">
+                                Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae.
+                                Laudem nostrud ei
+                                vim. Sapientem consequuntur usu ad, vel etiam philosophia ex, ad quidam option quo. Sed
+                                sale integre
+                                pericula ei, rebum adipiscing ius ea.
+                            </div>
+                            <div class="card-actions">
+                                <paper-button>No</paper-button>
+                                <paper-button>Yes</paper-button>
+                            </div>
+                        </paper-card>
+                    </p>
+                </div>
 
-        <p>
-            When testing new renewable energy technologies on our campuses, we evaluate them against a few criteria:
-            They must make good business sense, have potential for long-term significant impact and transform the
-            industry. For example, in 2007, we installed the largest corporate solar panel installation of its
-            kind &mdash; 1.7 MW &mdash; at our Mountain View campus. We've grown the size of the system to 1.9 MW, and
-            it generates enough electricity to power 30% of the peak load of the buildings on which it sits.
-        </p>
 
-        <p>
-            Currently, very little of the world's power is from renewables like wind and solar. We're working on
-            changing that by buying electricity directly from wind farms near our data centers. We're also working with
-            our utility partners to find solutions that will make more renewable energy available for us and for others.
-            All of these initiatives help us get clean energy at competitive prices and the wind farm owners get the
-            money they need to build these projects and/or finance additional clean energy facilities. Together we make
-            the grid a little bit greener.
-        </p>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>
+                        <paper-card heading="Titles AND images!" class="pink"
+                                    image="http://placehold.it/350x150">
+                            <div class="card-content">
+                                Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae.
+                                Laudem nostrud ei
+                                vim. Sapientem consequuntur usu ad, vel etiam philosophia ex, ad quidam option quo. Sed
+                                sale integre
+                                pericula ei, rebum adipiscing ius ea.
+                            </div>
+                            <div class="card-actions">
+                                <paper-button>No</paper-button>
+                                <paper-button>Yes</paper-button>
+                            </div>
+                        </paper-card>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
     </article>
 </section>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiTOmmzp9kPxxVaNWTlVvcpIpi3rcqwY0&callback=initMap"

@@ -20,6 +20,8 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.0.0",
-    "google-map": "PolymerLabs/google-map#~1.1.0"
+    "google-map": "PolymerLabs/google-map#~1.1.0",
+    "x-tag-deck": "~0.2.11",
+    "custom-card": "*"
   }
 }
