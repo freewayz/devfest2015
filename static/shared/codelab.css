@@ -19,11 +19,11 @@ body {
   margin: 0;
   min-height: 150vh;
   overflow-x: hidden;
-  background-image: url("/images/code-wallpaper.jpg");
+  background-image: url("/images/bg.jpg");
 }
 
 header {
-  min-height: 20em;
+  min-height: 15em;
   text-align: right;
   box-sizing: border-box;
   padding: 1em;
@@ -37,6 +37,11 @@ header .links {
   float: right;
   z-index: 2;
   position: relative;
+}
+header .logo {
+  float: left;
+  z-index: 2;
+  position: fixed;
 }
 
 header .links a {

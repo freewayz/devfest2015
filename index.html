@@ -13,20 +13,27 @@
     <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
     <link rel="import" href="/bower_components/iron-icons/iron-icons.html">
     <link rel="import" href="/bower_components/iron-flex-layout/iron-flex-layout.html">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="import" href="/bower_components/paper-styles/color.html">
     <script async src="/shared/codelab.js"></script>
     <script async src="/shared/site.js"></script>
+    <script async src="/shared/table.js"></script>
 </head>
 <body>
 
 <header>
+    <div class="logo">
+        <a href="#">
+            <img src="images/devfest_logo.png"/>
+        </a>
+    </div>
+
     <div class="links">
         <a href="#about">About</a>
-        <a href="#projects">Schedule</a>
+        <a href="#track">Tracks</a>
         <a href="#speakers">Speakers</a>
         <a href="#location">Location</a>
-        <a href="#at-google">Event Track</a>
-        <a href="#team">Book A Seat</a>
+        <a href="#seat">Register</a>
 
 
     </div>
@@ -42,7 +49,7 @@
 
 <section hidden name="about">
     <article>
-        <h1>About</h1>
+        <h1>About Event</h1>
 
         <p>
 
@@ -57,30 +64,27 @@
         </p>
 
         <p>
-            We from the norht is holding a devfest
+            FireBase
+            <br/>
+            <img src="images/firebase.png" width="200" height="130"/>
         </p>
     </article>
 </section>
 
-<section hidden name="projects">
+<section hidden name="track">
     <article>
-        <h1>Projects</h1>
-        <ul class="plain-list">
+        <h1>Event Tracks</h1>
 
-        </ul>
-    </article>
-</section>
-
-<section hidden name="at-google">
-    <article>
-
+        <div class="box-table">
+            <table data-fn="contacts" data-url="https://gdgnorth-devfest2015.appspot.com/shared/speakers.js"></table>
+        </div>
     </article>
 </section>
 
 
 <section hidden name="location">
     <article>
-        <h1>At Google</h1>
+        <h1>Central Hotel Bompai, Kano</h1>
 
         <div id="map">
 
@@ -89,8 +93,24 @@
     </article>
 </section>
 
-<section hidden name="team">
+<section hidden name="seat">
     <article>
+        <!-- Change the width and height values to suit you best -->
+        <div class="typeform-widget" data-url="https://fr33wayz.typeform.com/to/VcB12w"
+             data-text="North-West Devfest 2015" style="width:100%;height:500px;"></div>
+        <script>(function () {
+            var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = 'typef_orm', b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+            if (!gi.call(d, id)) {
+                js = ce.call(d, 'script');
+                js.id = id;
+                js.src = b + 'widget.js';
+                q = gt.call(d, 'script')[0];
+                q.parentNode.insertBefore(js, q)
+            }
+        })()</script>
+        <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by <a
+                href="http://www.typeform.com/?utm_campaign=typeform_VcB12w&amp;utm_source=website&amp;utm_medium=typeform&amp;utm_content=typeform-embedded&amp;utm_term=English"
+                style="color: #999" target="_blank">Typeform</a></div>
 
     </article>
 
@@ -110,7 +130,7 @@
 
                             </div>
                             <div class="card-actions">
-                                <paper-button>Twitter</paper-button>
+                                <paper-button>Edache Peter</paper-button>
                                 <paper-button>Github</paper-button>
                             </div>
                         </paper-card>
@@ -121,9 +141,9 @@
                         <paper-card heading="" class="pink"
                                     animated-shadow elevation="5"
                                     image="/images/peter.png"
-                                    >
+                                >
                             <div class="card-content">
-                               Android
+                                Android
                             </div>
                             <div class="card-actions">
                                 <paper-button>No</paper-button>
@@ -135,7 +155,7 @@
                 <div class="col-2">
                     <p>
                         <paper-card heading="!" class="pink"
-                                animated-shadow elevation="5"
+                                    animated-shadow elevation="5"
                                     image="/images/peter.png">
                             <div class="card-content">
                                 Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae.

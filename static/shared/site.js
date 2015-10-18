@@ -20,8 +20,8 @@ function animateToSection(link, current, previous) {
     var imageValue = Math.floor(Math.random() * 5) + 1  ;
     var imageName = '/images/devfest'+ imageValue +'.jpg';
     var imageBackground = "url("+imageName+")";
-    //effectNode.style.background = newColor;
-    effectNode.style.backgroundImage = imageBackground;
+    effectNode.style.background = newColor;
+    //effectNode.style.backgroundImage = imageBackground;
 
     var scaleSteps = [{transform: 'scale(0)'}, {transform: 'scale(1)'}];
     var timing = {duration: 2500, easing: 'ease-in-out'};
@@ -35,8 +35,8 @@ function animateToSection(link, current, previous) {
     var groupEffect = new GroupEffect(allEffects);
     var anim = document.timeline.play(groupEffect);
     anim.addEventListener('finish', function () {
-        //header.style.backgroundColor = newColor;
-        header.style.backgroundImage = imageBackground ;
+        header.style.backgroundColor = newColor;
+        //header.style.backgroundImage = imageBackground ;
         header.removeChild(effectNode);
     });
 }
