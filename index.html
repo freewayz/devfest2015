@@ -6,18 +6,22 @@
           type="text/css"/>
     <link href="/shared/codelab.css" rel="stylesheet" type="text/css">
     <link href="/shared/site.css" rel="stylesheet" type="text/css">
+    <link href="/shared/flipclock.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.rawgit.com/web-animations/web-animations-js/2.0.0/web-animations-next.min.js"></script>
     <script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
     <link rel="import" href="/bower_components/paper-card/paper-card.html">
     <link rel="import" href="/bower_components/paper-button/paper-button.html">
     <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
     <link rel="import" href="/bower_components/iron-icons/iron-icons.html">
+    <link rel="import" href="/bower_components/profile-vcard/profile-vcard.html">
     <link rel="import" href="/bower_components/iron-flex-layout/iron-flex-layout.html">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="import" href="/bower_components/paper-styles/color.html">
+    <script async src="/shared/jquery-2.1.4.min.js"></script>
     <script async src="/shared/codelab.js"></script>
     <script async src="/shared/site.js"></script>
     <script async src="/shared/table.js"></script>
+    <script src="/shared/count-down.js"></script>
+    <script src="/shared/flipclock.min.js"></script>
 </head>
 <body>
 
@@ -26,14 +30,16 @@
         <a href="#">
             <img src="images/devfest_logo.png"/>
         </a>
+
+
     </div>
 
     <div class="links">
         <a href="#about">About</a>
-        <a href="#track">Tracks</a>
-        <a href="#speakers">Speakers</a>
-        <a href="#location">Location</a>
         <a href="#seat">Register</a>
+        <a href="#track">Tracks</a>
+        <a href="#team">Speaker</a>
+        <a href="#location">Place</a>
 
 
     </div>
@@ -41,29 +47,37 @@
 
 <div class="fixed">
     <div class="icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-            <path d="M24 42.7l-2.9-2.63C10.8 30.72 4 24.55 4 17 4 10.83 8.83 6 15 6c3.48 0 6.82 1.62 9 4.17C26.18 7.62 29.52 6 33 6c6.17 0 11 4.83 11 11 0 7.55-6.8 13.72-17.1 23.07L24 42.7z"/>
-        </svg>
+        <a href="https://plus.google.com/u/0/b/111103667041161335536/111103667041161335536/about">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                <path d="M24 42.7l-2.9-2.63C10.8 30.72 4 24.55 4 17 4 10.83 8.83 6 15 6c3.48 0 6.82 1.62 9 4.17C26.18 7.62 29.52 6 33 6c6.17 0 11 4.83 11 11 0 7.55-6.8 13.72-17.1 23.07L24 42.7z"/>
+            </svg>
+        </a>
+
     </div>
 </div>
 
 <section hidden name="about">
     <article>
         <h1>About Event</h1>
+        <center>
+            <p class="css-typing">Google North West Devfest 2015 live happenning in Kano</p>
 
+            <p>
 
-        <p>
-            <img src="images/home_banner.jpg"/>
-        </p>
+            <div class="clock" style="margin:2em;"></div>
+            </p>
+        </center>
+        <p><img src="images/home_banner.jpg"/></p>
     </article>
 </section>
 
 <section hidden name="track">
     <article>
-        <h1>Event Tracks</h1>
+        <h1>Tracks</h1>
 
         <div class="box-table">
-            <table data-fn="contacts" data-url="https://gdgnorth-devfest2015.appspot.com/shared/speakers.js"></table>
+            <table data-fn="contacts" data-url="/shared/speakers.js"></table>
         </div>
     </article>
 </section>
@@ -71,7 +85,7 @@
 
 <section hidden name="location">
     <article>
-        <h1>Central Hotel Bompai, Kano</h1>
+        <h1>Pioneer ICT Kano, adjacent to FirstBank along zoo road</h1>
 
         <div id="map">
 
@@ -103,65 +117,83 @@
 
 </section>
 
-<section hidden name="speakers">
+<section hidden name="team">
     <article>
         <h1>Speakers</h1>
 
         <div class="grid-container">
             <div class="row">
-                <div class="col-2">
-                    <p>
-                        <paper-card heading="" class="pink" animated-shadow elevation="5"
-                                    image="/images/peter.png">
-                            <div class="card-content">
+                <div class="col-3">
+                    <profile-vcard name="Edache Peter"
+                                   image="/images/peter.png"
+                                   profession="Software Developer"
+                                   description="Java, JS and Python Geek"
+                                   website="+PeterEdache" place="GDG-JSIIT">
 
-                            </div>
-                            <div class="card-actions">
-                                <paper-button>Edache Peter</paper-button>
-                                <paper-button>Github</paper-button>
-                            </div>
-                        </paper-card>
-                    </p>
+                    </profile-vcard>
                 </div>
-                <div class="col-2">
-                    <p>
-                        <paper-card heading="" class="pink"
-                                    animated-shadow elevation="5"
-                                    image="/images/peter.png"
-                                >
-                            <div class="card-content">
-                                Android
-                            </div>
-                            <div class="card-actions">
-                                <paper-button>No</paper-button>
-                                <paper-button>Yes</paper-button>
-                            </div>
-                        </paper-card>
-                    </p>
-                </div>
-                <div class="col-2">
-                    <p>
-                        <paper-card heading="!" class="pink"
-                                    animated-shadow elevation="5"
-                                    image="/images/peter.png">
-                            <div class="card-content">
-                                Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae.
-                                Laudem nostrud ei
-                                vim. Sapientem consequuntur usu ad, vel etiam philosophia ex, ad quidam option quo. Sed
-                                sale integre
-                                pericula ei, rebum adipiscing ius ea.
-                            </div>
-                            <div class="card-actions">
-                                <paper-button>No</paper-button>
-                                <paper-button>Yes</paper-button>
-                            </div>
-                        </paper-card>
+                <div class="col-3">
+                    <profile-vcard name="Ibrahim Zango"
+                                   image="/images/ibro.jpg"
+                                   profession="Web Developer"
+                                   description="Love anything that has to do with the web" twitter="ibrozango"
+                                   website="+ibrozango" place="GDG-KANO">
 
-                    </p>
+                    </profile-vcard>
                 </div>
 
             </div>
             <div class="row">
+                <div class="col-3">
+                    <profile-vcard name="Abdurahman"
+                                   image="/images/abdrahman.jpg"
+                                   profession="Full Stack Ninja Developer"
+                                   description="Love to talk about politics"
+                                   website="+Adburahman" place="GDG-NWU"></profile-vcard>
+                </div>
+                <div class="col-3">
+                    <profile-vcard name="Usman I Usman"
+                                   image="/images/usman.jpg"
+                                   profession="Project Management"
+                                   description="Write here your cool description"
+                                   website="+usmanibrahimusman " place="Flexisaf Edusoft"></profile-vcard>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+                    <profile-vcard name="Abiola Musa"
+                                   image="/images/bello.jpg"
+                                   profession="Web Designer and Developer"
+                                   description="" twitter="oscar_mcm"
+                                   website="+bellomusa007" place="Flexisaf Edusoft"></profile-vcard>
+                </div>
+                <div class="col-3">
+                    <profile-vcard name="Ahmed Bature"
+                                   image="/images/ahmad_white.jpg"
+                                   profession="Android and UX designer"
+                                   description="" twitter="oscar_mcm"
+                                   website="+Aminu Hassan" place="GDG JSIIT"></profile-vcard>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+                    <profile-vcard name="Auwal MS"
+                                   image="/images/auwal.JPG"
+                                   profession="Web Designer and Git Master"
+                                   description="" twitter="oscar_mcm"
+                                   website="+Auwalmuhammad" place="GDG LAFIA"></profile-vcard>
+                </div>
+                <div class="col-3">
+                    <profile-vcard name="Abdulhakeem Mustapha"
+                                   image="/images/akeem.jpg"
+                                   profession="Android Developer"
+                                   description=""
+                                   website="+AbdulhakeemMustapha" place="GDG BUK"></profile-vcard>
+                </div>
 
             </div>
         </div>
@@ -169,7 +201,29 @@
 
     </article>
 </section>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiTOmmzp9kPxxVaNWTlVvcpIpi3rcqwY0&callback=initMap"
-        async defer></script>
+<script type="text/javascript">
+    var clock;
+
+    $(document).ready(function () {
+
+        // Grab the current date
+        var currentDate = new Date();
+
+        // Set some date in the past. In this case, it's always been since Jan 1
+        var futureDate = new Date(2015, 10, 14, 10, 00, 0);
+
+        // Calculate the difference in seconds between the future and current date
+        var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+        // Instantiate a coutdown FlipClock
+        clock = $('.clock').FlipClock(diff, {
+            clockFace: 'DailyCounter',
+            countdown: true
+        });
+    });
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiTOmmzp9kPxxVaNWTlVvcpIpi3rcqwY0&callback=initMap" async
+        defer></script>
+
 </body>
 </html>

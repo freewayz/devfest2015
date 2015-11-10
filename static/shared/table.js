@@ -1,23 +1,3 @@
-//    Demo json  loaded from dropbox
-//    Data = http://codepen.io/nakome/pen/DnEvr.js
-//[
-//   {
-//      "photo":"image url ",
-//      "name":"Jhon",
-//      "last":"Smith",
-//      "email":"jhony@site.com",
-//      "phone":"1-555-222-333",
-//      "web":"http://jhonSmith.com"
-//   },
-//   {
-//      "photo":"image url",
-//      "name":"Carla",
-//      "last":"Doe",
-//      "email":"carladoe@site.com",
-//      "phone":"1-333-111-555",
-//      "web":"http://carladoe.com"
-//   }
-// ]
 
 
 (function(){

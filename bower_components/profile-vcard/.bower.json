@@ -1,0 +1,49 @@
+{
+  "name": "profile-vcard",
+  "version": "2.0.0",
+  "homepage": "https://github.com/oscarmcm/profile-vcard",
+  "authors": [
+    "Oscar Cortez <om.cortez.2010@gmail.com>"
+  ],
+  "description": "personal vcard based in material design using polymer",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "polymer",
+    "material",
+    "design",
+    "profile",
+    "card",
+    "web-components",
+    "web-component",
+    "seed",
+    "vcard"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "/.*",
+    "node_modules",
+    "bower_components",
+    "/test/",
+    "/demo/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*"
+  },
+  "_release": "2.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.0",
+    "commit": "fa7876ad446bf976385f3f36d496d5877ecca1de"
+  },
+  "_source": "git://github.com/oscarmcm/profile-vcard.git",
+  "_target": "~2.0.0",
+  "_originalSource": "profile-vcard",
+  "_direct": true
+}

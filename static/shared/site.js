@@ -117,7 +117,7 @@ var contentString = '<div id="content">' +
 
 
 function initMap() {
-    var myLatLng = {lat: 12.0040851, lng: 8.5449501};
+    var myLatLng = {lat: 11.9613407, lng: 8.5211472};
     var trafficLayer = new google.maps.TrafficLayer();
     // Create a map object and specify the DOM element for display.
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -128,7 +128,7 @@ function initMap() {
 
     var marker = new google.maps.Marker({
         position: myLatLng,
-        title: "Central Hotel, Bompai Road, Kano",
+        title: "Pioneer ICT Kano, adjacent to FirstBank along zoo road",
         animation: google.maps.Animation.DROP
 
     });

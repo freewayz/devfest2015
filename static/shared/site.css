@@ -65,8 +65,9 @@ paper-card {
 }
 
 .grid-container {
+    margin-left: auto;
     width: 100%;
-    max-width: 800px;
+    max-width: 880px;
 }
 
 /*-- our cleafix hack -- */
@@ -112,6 +113,24 @@ paper-card {
 
 .outline, .outline * {
     outline: 1px solid #F6A1A1;
+}
+
+
+.css-typing
+{
+    width: 30em;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
 }
 
 /*-- some extra column content styling --*/
