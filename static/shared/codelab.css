@@ -17,13 +17,13 @@
 body {
   font-family: "Roboto", Arial, Sans-Serif;
   margin: 0;
-  background: #f4f4f4;
   min-height: 150vh;
   overflow-x: hidden;
+  background-image: url("/images/bg.jpg");
 }
 
 header {
-  min-height: 20em;
+  min-height: 15em;
   text-align: right;
   box-sizing: border-box;
   padding: 1em;
@@ -37,6 +37,11 @@ header .links {
   float: right;
   z-index: 2;
   position: relative;
+}
+header .logo {
+  float: left;
+  z-index: 2;
+  position: fixed;
 }
 
 header .links a {
@@ -61,7 +66,7 @@ header .links a.active {
 
 section {
   will-change: transform;
-  margin: -2em 2em 2em;
+  margin: -9em 2em 2em;
   z-index: 2;
   width: calc(100% - 4em);
   box-sizing: border-box;
@@ -77,6 +82,7 @@ section article {
   background: white;
   color: #666;
   max-width: 800px;
+
   margin: 0 auto;
   padding: 0.5em 2em;
   border-radius: 3px;
